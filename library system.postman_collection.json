@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "0ca5b7b1-5298-494f-a3d6-a3db87e37529",
+		"name": "library system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788730"
+	},
+	"item": [
+		{
+			"name": "add new book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"nour mohammad saleem\",\r\n\"isbn\":\"981999181\",\r\n\"aisle\":\"9862001\",\r\n\"author\":\"qa friday 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/Library/Addbook.php",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"Library",
+						"Addbook.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete book by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"ID\" : \"9283927319487411\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/Library/DeleteBook.phpp",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"Library",
+						"DeleteBook.phpp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get book by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"nour mohammad saleem\",\r\n\"isbn\":\"981999181\",\r\n\"aisle\":\"9862001\",\r\n\"author\":\"qa friday 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/Library/GetBook.php?ID=9819991819862001",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"Library",
+						"GetBook.php"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "9819991819862001"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "new book name",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "newISBNNumber ",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "newAisleNumber",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "newAutherName",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "firstName",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"value": ""
+		},
+		{
+			"key": "NewAuthor",
+			"value": ""
+		},
+		{
+			"key": "NewBookName",
+			"value": ""
+		},
+		{
+			"key": "NewISBNNumber",
+			"value": ""
+		},
+		{
+			"key": "NewAisleNumber",
+			"value": ""
+		}
+	]
+}
